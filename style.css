@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+    font-family: 'Amiri', serif;
+    background: #faf4ff;
+    /*background: -moz-linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
+    /* FF3.6-15 */
+    /* background: -webkit-linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
+    /* Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
+
+}
+
+a, .logo a:hover {
+    color: #363636;
+}
+
+a:hover {
+    color: #c70039;
+    text-decoration: none;
+}
+
+.title-paintings, .titles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Header */
+
+.logo {
+    font-size: 3rem;
+    margin-left: 5%;
+    font-family: 'Playfair Display SC', serif;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #faf4ff;
+}
+
+.navbar-nav {
+    margin-right: 10%;
+}
+.nav-link {
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+/* Paintings */
+
+.title-paintings {
+    padding: 20% 15% 0;
+}
+
+.paintings-container {
+    border: 3px solid #323232;
+    padding: 2%;
+}
+
+/* About */
+
+.titles {
+    padding: 10% 15% 0;
+}
+.main-container {
+    border: 3px solid #323232;
+    padding: 5% 8%;
+}
+.profile {
+    width: 100%;
+    background-color: #fffdf9;
+    padding: 5%;
+    margin-left: 30px;
+}
+
+.bio {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+
+.foot-container {
+    border: 3px solid #323232;
+    padding: 5% 15%;
+}
+h5 {
+    padding: 2%;
+}
+/* footer {
+    padding: 5% 15% 0;
+} */
+footer p {
+    color: #687466;
+    padding-top: 20px;
+}
+.icon {
+    padding: 0 20px;
+}
+
+@media (max-width: 990px) {
+    .logo {
+    font-size: 2rem;
+    }
+    .title-paintings {
+    padding: 20% 15% 2%;
+    }
+    .profile {
+    margin: 20px 0 0 0;
+    }
+}
+
