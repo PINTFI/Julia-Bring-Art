@@ -1,0 +1,22 @@
+{
+  "name": "julia-bring-art",
+  "version": "1.0.0",
+  "description": "Julia Bring Art Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PINTFI/Julia-Bring-Art.git"
+  },
+  "author": "Filipe Pinto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PINTFI/Julia-Bring-Art/issues"
+  },
+  "homepage": "https://github.com/PINTFI/Julia-Bring-Art#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
