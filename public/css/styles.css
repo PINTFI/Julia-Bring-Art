@@ -61,25 +61,15 @@ a:hover {
     text-decoration: none;
 }
 
+.burger {
+    display: none;
+}
 .burger div {
     width: 25px;
     height: 5px;
     background-color: black;
     margin: 5px;
-    display: none;
 }
-/* nav {
-    background-color: #faf4ff;
-    box-shadow: 0 0 5px #c70039;
-}
-
-.navbar-nav {
-    margin-right: 10%;
-}
-.nav-link {
-    margin: 10px 20px;
-    font-weight: bold;
-} */
 
 /* Paintings */
 
@@ -134,12 +124,6 @@ footer p {
     padding: 0 20px;
 }
 
-@media screen and (max-width:1280px) {
-    .navi-links {
-        width: 50%;
-    }
-}
-
 @media (max-width: 990px) {
     .logo {
     font-size: 2rem;
@@ -152,6 +136,30 @@ footer p {
     }
     .profile {
     margin: 20px 0 0 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navi-links {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        transform: translateX(100%);
+    }
+    .navi-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 5%;
     }
 }
 
