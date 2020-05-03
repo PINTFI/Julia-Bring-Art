@@ -1,9 +1,10 @@
-const express = require("express");
-//const bodyParser = require("body-parser");
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navi-links');
 
-const app = express();
-app.use(express.static("public"));
+    burger.onclick = () => {
+        nav.classList.toggle('navi-active');
+    }
+}
 
-app.get("/", (req, res) => res.sendFile(__dirname + "/index.html"));
-
-app.listen(3000, () => { console.log("Serving"); });
+navSlide();
