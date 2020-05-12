@@ -8,13 +8,7 @@ html{
 }
 body {
     font-family: 'Amiri', serif;
-    background: #faf4ff;
-    /*background: -moz-linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
-    /* FF3.6-15 */
-    /* background: -webkit-linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
-    /* Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(45deg, #fcf8e8 0%, #EAE0D5 100%); */
-
+    background: #fff6da;
 }
 
 /* a {
@@ -28,10 +22,11 @@ body {
 
 /* Header */
 
-/* .logo {
+.logo {
     font-size: 3rem;
     font-family: 'Playfair Display SC', serif;
-} */
+    color: #042f4b;
+}
 
 /* Navigation */
 
@@ -40,7 +35,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     min-height: 20vh;
-    background-color: blueviolet;
 }
 .nav-links {
     /* position: fixed;*/
@@ -54,7 +48,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
-    color: black;
+    color: #042f4b;
 }
 
 .nav-links li {
