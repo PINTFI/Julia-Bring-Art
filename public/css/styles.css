@@ -39,7 +39,7 @@ a:hover {
 
 nav {
     background-color: #faf4ff;
-    box-shadow: 0 0 3px #c70039;
+    box-shadow: 3px .02rem .05rem;
 }
 
 .navbar-nav {
@@ -50,10 +50,16 @@ nav {
     font-weight: bold;
 }
 
+/* Banner */
+
+.banner img{
+    width: 100%;
+}
+
 /* Paintings */
 
 .title-paintings {
-    padding: 20% 15% 0;
+    padding: 5% 15% 0;
 }
 
 .paintings-container {
