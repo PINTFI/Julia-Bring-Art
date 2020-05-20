@@ -62,15 +62,18 @@ a:hover {
     text-decoration: none;
 }
 
-.burger {
+.toggle-button {
     position: absolute;
     top: 1rem;
     right: 2rem;
     flex-direction: column;
     display: none;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
 }
-.burger div {
-    width: 40px;
+.toggle-button .bar {
+    width: 100%;
     height: 5px;
     background-color: black;
     margin: 3px;
@@ -143,11 +146,9 @@ h5 {
     .profile {
     margin: 20px 0 0 0;
     }
-    .burger {
+    .toggle-button {
         display: flex;
-        cursor: pointer;
     }
-    
     .nav-bar {
         flex-direction: column;
     }
