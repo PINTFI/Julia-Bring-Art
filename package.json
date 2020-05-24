@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/PINTFI/Julia-Bring-Art#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "gsap": "^3.2.6"
   }
 }
