@@ -1,0 +1,131 @@
+@mixin titles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@mixin mobile {
+    @media (max-width: 990px) {
+        @content;
+    }
+
+    ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    font-family: 'Amiri', serif;
+    background: #faf4ff;
+
+    a:hover {
+        color: #c70039;
+        text-decoration: none;
+    }
+
+    .titles {
+        padding: 10% 15% 0;
+        @include titles;
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin-left: 5%;
+        font-family: 'Playfair Display SC', serif;
+    }
+}
+
+nav {
+    background-color: #faf4ff;
+    box-shadow: 3px .02rem .05rem;
+
+    .navbar-nav {
+        margin-right: 10%;
+
+    }
+
+    .nav-link {
+        margin: 10px 20px;
+        font-weight: bold;
+    }
+}
+
+main {
+    .banner img {
+        width: 100%;
+    }
+
+    /* Paintings */
+
+    .title-paintings {
+        padding: 5% 15% 0;
+        @include titles;
+    }
+
+    .paintings-container {
+        border: 3px solid #323232;
+        padding: 2%;
+    }
+
+    /* About */
+
+    .main-container {
+        border: 3px solid #323232;
+        padding: 5% 8%;
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 100%;
+        background-color: #fffdf9;
+        padding: 5%;
+        margin-left: 30px;
+        border-radius: 2rem;
+    }
+
+    .bio {
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+}
+
+footer {
+    .foot-container {
+        border: 3px solid #323232;
+        padding: 5% 15%;
+    }
+
+    h5 {
+        padding: 2%;
+    }
+
+    footer p {
+        color: #687466;
+        padding-top: 20px;
+    }
+
+    .icon {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .title-paintings {
+        padding: 20% 15% 2%;
+    }
+
+    .main-container {
+        display: block;
+    }
+
+    .profile {
+        margin: 20px 0 0 0;
+    }
+}
