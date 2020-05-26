@@ -25,6 +25,10 @@ body .logo {
   font-family: 'Playfair Display SC', serif;
 }
 
+body .logo:hover {
+  text-shadow: -1px 1px 1px red;
+}
+
 nav {
   background-color: #faf4ff;
   -webkit-box-shadow: 3px .02rem .05rem;
@@ -56,12 +60,12 @@ main .title-paintings {
 }
 
 main .paintings-container {
-  border: 3px solid #323232;
+  border: 3px solid red;
   padding: 2%;
 }
 
 main .main-container {
-  border: 3px solid #323232;
+  border: 3px solid red;
   padding: 5% 8%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,8 +89,12 @@ main .bio {
 }
 
 footer .foot-container {
-  border: 3px solid #323232;
+  border: 3px solid red;
   padding: 5% 15%;
+}
+
+footer .foot-container a {
+  color: red;
 }
 
 footer h5 {
@@ -100,6 +108,10 @@ footer footer p {
 
 footer .icon {
   padding: 0 20px;
+}
+
+footer .icon:hover {
+  color: #c70039;
 }
 
 @media (max-width: 990px) {
