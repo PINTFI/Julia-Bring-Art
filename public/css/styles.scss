@@ -1,17 +1,5 @@
-$colors: red;
-
-@mixin titles {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-@mixin mobile {
-    @media (max-width: 990px) {
-        @content;
-    }
-
-    ;
-}
+@import './variables';
+@import './mixins';
 
 html {
     scroll-behavior: smooth;
@@ -20,10 +8,10 @@ html {
 body {
     text-align: center;
     font-family: 'Amiri', serif;
-    background: #faf4ff;
+    background: $color-1;
 
     a:hover {
-        color: #c70039;
+        color: $color-3;
         text-decoration: none;
     }
 
@@ -36,15 +24,11 @@ body {
         font-size: 3rem;
         margin-left: 5%;
         font-family: 'Playfair Display SC', serif;
-
-        &:hover {
-            text-shadow: -1px 1px 1px $colors;
-        }
     }
 }
 
 nav {
-    background-color: #faf4ff;
+    background-color: $color-1;
     box-shadow: 3px .02rem .05rem;
 
     .navbar-nav {
@@ -71,14 +55,14 @@ main {
     }
 
     .paintings-container {
-        border: 3px solid $colors;
+        border: $borders;
         padding: 2%;
     }
 
     /* About */
 
     .main-container {
-        border: 3px solid $colors;
+        border: $borders;
         padding: 5% 8%;
         display: flex;
         align-items: center;
@@ -86,7 +70,7 @@ main {
 
     .profile-image {
         width: 100%;
-        background-color: #fffdf9;
+        background-color: $color-1;
         padding: 5%;
         margin-left: 30px;
         border-radius: 2rem;
@@ -100,11 +84,11 @@ main {
 
 footer {
     .foot-container {
-        border: 3px solid $colors;
+        border: $borders;
         padding: 5% 15%;
 
         a {
-            color: $colors;
+            color: $color-2;
         }
     }
 
@@ -113,7 +97,7 @@ footer {
     }
 
     footer p {
-        color: #687466;
+        color: $color-2;
         padding-top: 20px;
     }
 
@@ -121,7 +105,7 @@ footer {
         padding: 0 20px;
 
         &:hover {
-            color: #c70039;
+            color: $color-3;
         }
     }
 }
